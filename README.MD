@@ -18,7 +18,8 @@ Include this repository as a module in your existing terraform code:
 
 ``` HCL
 module "budget" {
-  source          = "github.com/jameswoolfenden/terraform-aws-budget"
+  source          = "JamesWoolfenden/budget/aws"
+  version         = "0.0.2"
   common_tags     = "${var.common_tags}"
   snapshot_name   = "${local.snapshot_name}"
   cron_expression = "${var.cron_expression}"
