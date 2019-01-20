@@ -1,5 +1,5 @@
 module "budget" {
-  source            = "../../"
+  source            = "github.com/jameswoolfenden/terraform-aws-budget"
   limit             = "${var.limit}"
   currency          = "${var.currency}"
   time_period_start = "${var.time_period_start}"

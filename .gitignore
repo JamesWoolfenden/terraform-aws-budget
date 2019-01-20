@@ -6,4 +6,11 @@
 .terraform
 .idea
 *.iml
+.build-harness
+build-harness
 *.ini
+tmp
+lambda
+*~HEAD
+*backup
+*.orig
