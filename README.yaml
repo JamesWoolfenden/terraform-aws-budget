@@ -18,7 +18,7 @@ categories:
   - terraform-modules/budget
 
 # Logo for this project
-#logo: docs/slalom-logo.pn
+#logo: docs/slalom-logo.png
 
 # License of this project
 license: "APACHE2"
@@ -67,7 +67,6 @@ usage: |-
 
 include:
   - "docs/terraform.md"
-  - "docs/targets.md"
 
 # Contributors to this project
 contributors:
