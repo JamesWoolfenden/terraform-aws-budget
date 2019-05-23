@@ -37,8 +37,6 @@ module "budget" {
 | time_period_start | Time to start                                                   | string |    -     |   yes    |
 | time_unit         | Units for time                                                  | string |    -     |   yes    |
 
-
-
 ## Related Projects
 
 Check out these related projects.
@@ -50,7 +48,6 @@ Check out these related projects.
 **Got a question?**
 
 File a GitHub [issue](https://github.com/JamesWoolfenden/terraform-aws-budget/issues).
-
 
 ## Contributing
 
@@ -102,5 +99,4 @@ See [LICENSE](LICENSE) for full details.
 [share_linkedin]: https://www.linkedin.com/shareArticle?mini=true&title=terraform-aws-budget&url=https://github.com/JamesWoolfenden/terraform-aws-budget
 [share_reddit]: https://reddit.com/submit/?url=https://github.com/JamesWoolfenden/terraform-aws-budget
 [share_facebook]: https://facebook.com/sharer/sharer.php?u=https://github.com/JamesWoolfenden/terraform-aws-budget
-[share_googleplus]: https://plus.google.com/share?url=https://github.com/JamesWoolfenden/terraform-aws-budget
 [share_email]: mailto:?subject=terraform-aws-budget&body=https://github.com/JamesWoolfenden/terraform-aws-budget
