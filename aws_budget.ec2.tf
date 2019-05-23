@@ -6,7 +6,7 @@ resource "aws_budgets_budget" "ec2" {
   time_unit         = "MONTHLY"
   time_period_start = "${var.time_period_start}"
 
-  cost_filters {
+  cost_filters = {
     Service = "Amazon Elastic Compute Cloud - Compute"
   }
 }

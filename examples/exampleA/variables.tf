@@ -1,11 +1,11 @@
 variable "limit" {
   description = "Budget alarm limit"
-  type        = "string"
+  type        = number
 }
 
 variable "currency" {
   description = "Name of the currency the budget is in"
-  type        = "string"
+  type        = string
 }
 
 variable "time_unit" {
