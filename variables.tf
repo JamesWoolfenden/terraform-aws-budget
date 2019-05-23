@@ -12,3 +12,8 @@ variable "time_period_start" {
   description = "Time to start"
   type        = "string"
 }
+
+variable "region" {
+  description = "aws region"
+  default     = "eu-west-1"
+}
