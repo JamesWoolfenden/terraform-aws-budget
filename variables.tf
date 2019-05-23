@@ -10,10 +10,11 @@ variable "currency" {
 
 variable "time_period_start" {
   description = "Time to start"
-  type        = "string"
+  type        = string
 }
 
 variable "region" {
   description = "aws region"
   default     = "eu-west-1"
+  type        = string
 }

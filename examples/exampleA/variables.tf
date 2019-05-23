@@ -10,10 +10,10 @@ variable "currency" {
 
 variable "time_unit" {
   description = "Units for time"
-  type        = "string"
+  type        = string
 }
 
 variable "time_period_start" {
   description = "Time to start"
-  type        = "string"
+  type        = string
 }
