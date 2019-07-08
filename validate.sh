@@ -2,4 +2,3 @@
 cd example/exampleA || return
 terraform init
 terraform validate
-terraform plan
