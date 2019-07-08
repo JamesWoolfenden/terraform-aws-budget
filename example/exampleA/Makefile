@@ -1,9 +1,11 @@
 #Makefile
 ifdef OS
-   RM = $(powershell  –noprofile rm .\terraform\modules -force -recurse)
+   RM   = $(powershell  -noprofile rm .\.terraform\modules -force -recurse)
+   BLAT = $(powershell  -noprofile rm .\.terraform\ -force -recurse)
 else
    ifeq ($(shell uname), Linux)
       RM = rm .terraform/modules/ -fr
+      BLAT= rm .terraform/ -fr
    endif
 endif
 
@@ -33,3 +35,6 @@ docs:
 valid:
 	tflint
 	terraform fmt -check=true -diff=true
+purge:
+	$(BLAT)
+	terraform init -reconfigure
