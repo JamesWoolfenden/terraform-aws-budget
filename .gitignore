@@ -19,3 +19,4 @@ tmp
 lambda
 *~HEAD
 *backup
+*.bak
