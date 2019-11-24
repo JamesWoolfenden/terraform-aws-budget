@@ -4,7 +4,6 @@ repos:
     hooks:
     -   id: check-json
     -   id: check-merge-conflict
-    -   id: trailing-whitespace
     -   id: end-of-file-fixer
     -   id: check-yaml
     -   id: check-added-large-files
@@ -39,6 +38,6 @@ repos:
   hooks:
   - id: markdownlint
 - repo: git://github.com/antonbabenko/pre-commit-terraform
-  rev: v1.20.0
+  rev: v1.21.0
   hooks:
     - id: terraform_docs

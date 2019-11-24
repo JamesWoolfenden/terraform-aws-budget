@@ -34,6 +34,13 @@ module "budget" {
 | limit | Budget alarm limit | number | n/a | yes |
 | time\_period\_start | Time to start | string | n/a | yes |
 
+## Outputs
+
+| Name | Description |
+|------|-------------|
+| ec2\_budget | hashicorp required |
+| ec2\_half\_budget |  |
+
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Related Projects
