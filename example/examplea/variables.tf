@@ -14,10 +14,10 @@ variable "time_period_start" {
 }
 
 variable "budget" {
-  description="Basic Budget Properties"
-  type=map
+  description = "Basic Budget Properties"
+  type        = map
 }
 
 variable "notification" {
-  description="Budget notification properties"
+  description = "Budget notification properties"
 }

@@ -16,5 +16,3 @@ resource "aws_budgets_budget" "ec2-half" {
     subscriber_email_addresses = var.notification["subscriber_email_addresses"]
   }
 }
-
-

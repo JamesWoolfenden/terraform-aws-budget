@@ -10,7 +10,7 @@ It's 100% Open Source and licensed under the [APACHE2](LICENSE).
 
 ## Usage
 
-These are just basic examples, your budget rules should be more sophisticated. 
+These are just basic examples, your budget rules should be more sophisticated.
 
 Include this repository as a module in your existing terraform code:
 
@@ -48,15 +48,17 @@ notification={
 
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
-| currency | Name of the currency the budget is in | string | n/a | yes |
+| budget | Basic Budget Properties | map | `{ "budget_type": "COST", "limit_unit": "USD", "name": "budget-ec2-monthly", "time_unit": "MONTHLY" }` | no |
+| cost\_filters | The Budget filters to use | map | `{ "Service": "Amazon Elastic Compute Cloud - Compute" }` | no |
 | limit | Budget alarm limit | number | n/a | yes |
+| notification | Budget notification properties | string | n/a | yes |
 | time\_period\_start | Time to start | string | n/a | yes |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| ec2\_budget | hashicorp required |
+| ec2\_budget |  |
 | ec2\_half\_budget |  |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
