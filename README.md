@@ -10,7 +10,7 @@ It's 100% Open Source and licensed under the [APACHE2](LICENSE).
 
 ## Usage
 
-These are just basic examples, your budget rules should be more sophisticated.
+These are just basic examples, your budget rules should be much more sophisticated.
 
 Include this repository as a module in your existing terraform code:
 
