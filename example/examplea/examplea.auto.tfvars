@@ -1,4 +1,16 @@
 limit             = "100"
-currency          = "Pounds"
-time_period_start = "2018-06-01_12:00"
+time_period_start = "2020-01-01_12:00"
 time_unit         = "MONTHLY"
+budget={
+    name              = "budget-ec2-monthly"
+    budget_type       = "COST"
+    time_unit         = "MONTHLY"
+    limit_unit        = "Pounds"
+   }
+notification={
+    comparison_operator        = "GREATER_THAN"
+    threshold                  = 100
+    threshold_type             = "PERCENTAGE"
+    notification_type          = "FORECASTED"
+    subscriber_email_addresses = ["test@example.com"]
+  }
