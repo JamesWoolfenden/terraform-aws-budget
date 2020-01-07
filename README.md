@@ -10,7 +10,7 @@ It's 100% Open Source and licensed under the [APACHE2](LICENSE).
 
 ## Usage
 
-These are just basic examples, your budget rules should be more sophisticated.
+These are just basic examples, your budget rules should be more sophisticated. 
 
 Include this repository as a module in your existing terraform code:
 
@@ -18,11 +18,29 @@ Include this repository as a module in your existing terraform code:
 module "budget" {
   source          = "JamesWoolfenden/budget/aws"
   version         = "0.2.14"
-  common_tags     = var.common_tags
-  snapshot_name   = local.snapshot_name
-  cron_expression = var.cron_expression
-  regions         = var.regions
+  limit             = var.limit
+  time_period_start = var.time_period_start
+  budget            = var.budget
+  notification      = var.notification
 }
+```
+
+The module uses 2 objects:
+
+```HCL
+budget={
+    name              = "budget-ec2-monthly"
+    budget_type       = "COST"
+    time_unit         = "MONTHLY"
+    limit_unit        = "Pounds"
+   }
+notification={
+    comparison_operator        = "GREATER_THAN"
+    threshold                  = 100
+    threshold_type             = "PERCENTAGE"
+    notification_type          = "FORECASTED"
+    subscriber_email_addresses = ["test@example.com"]
+  }
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->

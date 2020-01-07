@@ -6,9 +6,7 @@ resource "aws_budgets_budget" "ec2-half" {
   time_unit         = var.budget["time_unit"]
   time_period_start = var.time_period_start
 
-  cost_filters = {
-    Service = "Amazon Elastic Compute Cloud - Compute"
-  }
+  cost_filters = var.cost_filters
 
   notification {
     comparison_operator        = var.notification["comparison_operator"]
@@ -18,3 +16,5 @@ resource "aws_budgets_budget" "ec2-half" {
     subscriber_email_addresses = var.notification["subscriber_email_addresses"]
   }
 }
+
+
