@@ -21,3 +21,8 @@ variable "budget" {
 variable "notification" {
   description = "Budget notification properties"
 }
+
+variable "cost_filters" {
+  description = "The Budget filters to use"
+  type        = map
+}

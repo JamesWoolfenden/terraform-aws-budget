@@ -26,7 +26,5 @@ variable "notification" {
 variable "cost_filters" {
   description = "The Budget filters to use"
   type        = map
-  default = {
-    Service = "Amazon Elastic Compute Cloud - Compute"
-  }
+  default     = null
 }

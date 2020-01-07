@@ -16,8 +16,8 @@ Include this repository as a module in your existing terraform code:
 
 ```terraform
 module "budget" {
-  source          = "JamesWoolfenden/budget/aws"
-  version         = "0.2.14"
+  source            = "JamesWoolfenden/budget/aws"
+  version           = "0.3.32"
   limit             = var.limit
   time_period_start = var.time_period_start
   budget            = var.budget
@@ -25,7 +25,7 @@ module "budget" {
 }
 ```
 
-The module uses 2 objects:
+The module reference uses 2 objects, budget and notification, from the example data:
 
 ```HCL
 budget={
@@ -49,7 +49,7 @@ notification={
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
 | budget | Basic Budget Properties | map | `{ "budget_type": "COST", "limit_unit": "USD", "name": "budget-ec2-monthly", "time_unit": "MONTHLY" }` | no |
-| cost\_filters | The Budget filters to use | map | `{ "Service": "Amazon Elastic Compute Cloud - Compute" }` | no |
+| cost\_filters | The Budget filters to use | map | `"null"` | no |
 | limit | Budget alarm limit | number | n/a | yes |
 | notification | Budget notification properties | string | n/a | yes |
 | time\_period\_start | Time to start | string | n/a | yes |

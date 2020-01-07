@@ -14,3 +14,7 @@ notification = {
   notification_type          = "FORECASTED"
   subscriber_email_addresses = ["test@example.com"]
 }
+
+cost_filters = {
+  Service = "Amazon Elastic Compute Cloud - Compute"
+}
