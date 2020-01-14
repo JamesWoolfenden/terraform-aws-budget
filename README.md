@@ -25,7 +25,8 @@ module "budget" {
 }
 ```
 
-The module reference uses 2 objects, budget and notification, from the example data:
+The module reference uses 2 objects, budget and notification, from the example data. This module implements billing alerts on your AWS account,
+the provided variables are in **examplea.auto.tfvars**:
 
 ```HCL
 budget={
@@ -42,6 +43,9 @@ notification={
     subscriber_email_addresses = ["test@example.com"]
   }
 ```
+
+The variable limit creates 2 sets of alerts one at its setting and another at half.
+Additional users or groups can added to *subscriber_email_addresses*.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Inputs
@@ -83,7 +87,7 @@ Please use the [issue tracker](https://github.com/JamesWoolfenden/terraform-aws-
 
 ## Copyrights
 
-Copyright © 2019-2019 [Slalom, LLC](https://slalom.com)
+Copyright © 2019-2020 [Slalom, LLC](https://slalom.com)
 
 ## License
 
