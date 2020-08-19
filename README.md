@@ -5,7 +5,7 @@
 [![Build Status](https://github.com/JamesWoolfenden/terraform-aws-budget/workflows/Verify%20and%20Bump/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-aws-budget)
 [![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-aws-budget.svg)](https://github.com/JamesWoolfenden/terraform-aws-budget/releases/latest)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
-[![pre-commit](https://img.shields.io/badge/checkov-verified-brightgreen)](https://www.checkov.io/)
+[![checkov](https://img.shields.io/badge/checkov-verified-brightgreen)](https://www.checkov.io/)
 
 Terraform module - creates a Budget and a Budget for half as much.
 
@@ -53,6 +53,10 @@ The variable limit creates 2 sets of alerts one at its setting and another at ha
 Additional users or groups can added to *subscriber_email_addresses*.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+## Requirements
+
+No requirements.
+
 ## Providers
 
 | Name | Version |
@@ -62,9 +66,9 @@ Additional users or groups can added to *subscriber_email_addresses*.
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:-----:|
-| budget | Basic Budget Properties | `map` | <pre>{<br>  "budget_type": "COST",<br>  "limit_unit": "USD",<br>  "name": "budget-ec2-monthly",<br>  "time_unit": "MONTHLY"<br>}<br></pre> | no |
-| cost\_filters | The Budget filters to use | `map` | n/a | yes |
+|------|-------------|------|---------|:--------:|
+| budget | Basic Budget Properties | `map` | <pre>{<br>  "budget_type": "COST",<br>  "limit_unit": "USD",<br>  "name": "budget-ec2-monthly",<br>  "time_unit": "MONTHLY"<br>}</pre> | no |
+| cost\_filters | The Budget filters to use | `map` | `null` | no |
 | limit | Budget alarm limit | `number` | n/a | yes |
 | notification | Budget notification properties | `any` | n/a | yes |
 | time\_period\_start | Time to start | `string` | n/a | yes |
