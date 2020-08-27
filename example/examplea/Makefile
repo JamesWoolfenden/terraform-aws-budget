@@ -46,3 +46,4 @@ target:
 
 purge:
 	$(BLAT)
+	terraform init -reconfigure
