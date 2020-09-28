@@ -51,7 +51,6 @@ The variable limit creates 2 sets of alerts one at its setting and another at ha
 Additional users or groups can added to _subscriber_email_addresses_.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
-
 ## Requirements
 
 No requirements.
@@ -59,25 +58,25 @@ No requirements.
 ## Providers
 
 | Name | Version |
-| ---- | ------- |
-| aws  | n/a     |
+|------|---------|
+| aws | n/a |
 
 ## Inputs
 
-| Name              | Description                    | Type     | Default                                                                                                                            | Required |
-| ----------------- | ------------------------------ | -------- | ---------------------------------------------------------------------------------------------------------------------------------- | :------: |
-| budget            | Basic Budget Properties        | `map`    | <pre>{<br> "budget_type": "COST",<br> "limit_unit": "USD",<br> "name": "budget-ec2-monthly",<br> "time_unit": "MONTHLY"<br>}</pre> |    no    |
-| cost_filters      | The Budget filters to use      | `map`    | `null`                                                                                                                             |    no    |
-| limit             | Budget alarm limit             | `number` | n/a                                                                                                                                |   yes    |
-| notification      | Budget notification properties | `any`    | n/a                                                                                                                                |   yes    |
-| time_period_start | Time to start                  | `string` | n/a                                                                                                                                |   yes    |
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| budget | Basic Budget Properties | `map` | <pre>{<br>  "budget_type": "COST",<br>  "limit_unit": "USD",<br>  "name": "budget-ec2-monthly",<br>  "time_unit": "MONTHLY"<br>}</pre> | no |
+| cost\_filters | The Budget filters to use | `map` | `null` | no |
+| limit | Budget alarm limit | `number` | n/a | yes |
+| notification | Budget notification properties | `any` | n/a | yes |
+| time\_period\_start | Time to start | `string` | n/a | yes |
 
 ## Outputs
 
-| Name            | Description |
-| --------------- | ----------- |
-| ec2_budget      | n/a         |
-| ec2_half_budget | n/a         |
+| Name | Description |
+|------|-------------|
+| ec2\_budget | n/a |
+| ec2\_half\_budget | n/a |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
