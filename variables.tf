@@ -10,7 +10,7 @@ variable "time_period_start" {
 
 variable "budget" {
   description = "Basic Budget Properties"
-  type        = map
+  type        = map(any)
   default = {
     name        = "budget-ec2-monthly"
     budget_type = "COST"
@@ -25,6 +25,6 @@ variable "notification" {
 
 variable "cost_filters" {
   description = "The Budget filters to use"
-  type        = map
+  type        = map(any)
   default     = null
 }

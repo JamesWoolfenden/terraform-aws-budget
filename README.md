@@ -53,20 +53,22 @@ Additional users or groups can added to _subscriber_email_addresses_.
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
 
-No requirements.
+| Name | Version |
+|------|---------|
+| aws | 3.20.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| aws | n/a |
+| aws | 3.20.0 |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| budget | Basic Budget Properties | `map` | <pre>{<br>  "budget_type": "COST",<br>  "limit_unit": "USD",<br>  "name": "budget-ec2-monthly",<br>  "time_unit": "MONTHLY"<br>}</pre> | no |
-| cost\_filters | The Budget filters to use | `map` | `null` | no |
+| budget | Basic Budget Properties | `map(any)` | <pre>{<br>  "budget_type": "COST",<br>  "limit_unit": "USD",<br>  "name": "budget-ec2-monthly",<br>  "time_unit": "MONTHLY"<br>}</pre> | no |
+| cost\_filters | The Budget filters to use | `map(any)` | `null` | no |
 | limit | Budget alarm limit | `number` | n/a | yes |
 | notification | Budget notification properties | `any` | n/a | yes |
 | time\_period\_start | Time to start | `string` | n/a | yes |
