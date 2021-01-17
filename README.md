@@ -2,8 +2,12 @@
 
 [![Build Status](https://github.com/JamesWoolfenden/terraform-aws-budget/workflows/Verify%20and%20Bump/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-aws-budget)
 [![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-aws-budget.svg)](https://github.com/JamesWoolfenden/terraform-aws-budget/releases/latest)
+[![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/JamesWoolfenden/terraform-aws-budget.svg?label=latest)](https://github.com/JamesWoolfenden/terraform-aws-budget/releases/latest)
+![Terraform Version](https://img.shields.io/badge/tf-%3E%3D0.14.0-blue.svg)
+[![Infrastructure Tests](https://www.bridgecrew.cloud/badges/github/JamesWoolfenden/terraform-aws-budget/cis_aws)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=JamesWoolfenden%2Fterraform-aws-budget&benchmark=CIS+AWS+V1.2)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 [![checkov](https://img.shields.io/badge/checkov-verified-brightgreen)](https://www.checkov.io/)
+[![Infrastructure Tests](https://www.bridgecrew.cloud/badges/github/jameswoolfenden/terraform-aws-budget/general)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=JamesWoolfenden%2Fterraform-aws-budget&benchmark=INFRASTRUCTURE+SECURITY)
 
 Terraform module - creates a Budget and a Budget for half as much.
 
@@ -53,15 +57,13 @@ Additional users or groups can added to _subscriber_email_addresses_.
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
 
-| Name | Version |
-|------|---------|
-| aws | 3.20.0 |
+No requirements.
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| aws | 3.20.0 |
+| aws | n/a |
 
 ## Inputs
 
@@ -102,7 +104,7 @@ Please use the [issue tracker](https://github.com/JamesWoolfenden/terraform-aws-
 
 ## Copyrights
 
-Copyright © 2019-2020 James Woolfenden
+Copyright © 2019-2021 James Woolfenden
 
 ## License
 
@@ -133,7 +135,6 @@ under the License.
 
 [jameswoolfenden_homepage]: https://github.com/jameswoolfenden
 [jameswoolfenden_avatar]: https://github.com/jameswoolfenden.png?size=150
-
 [github]: https://github.com/jameswoolfenden
 [linkedin]: https://www.linkedin.com/in/jameswoolfenden/
 [twitter]: https://twitter.com/JimWoolfenden
