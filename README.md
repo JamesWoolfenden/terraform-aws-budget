@@ -65,6 +65,16 @@ No requirements.
 |------|---------|
 | aws | n/a |
 
+## Modules
+
+No Modules.
+
+## Resources
+
+| Name |
+|------|
+| [aws_budgets_budget](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/budgets_budget) |
+
 ## Inputs
 
 | Name | Description | Type | Default | Required |
@@ -81,7 +91,6 @@ No requirements.
 |------|-------------|
 | ec2\_budget | n/a |
 | ec2\_half\_budget | n/a |
-
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Related Projects
