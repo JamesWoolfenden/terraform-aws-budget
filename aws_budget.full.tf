@@ -1,4 +1,4 @@
-resource "aws_budgets_budget" "ec2" {
+resource "aws_budgets_budget" "full" {
   name              = var.budget["name"]
   budget_type       = var.budget["budget_type"]
   limit_amount      = var.limit

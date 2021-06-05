@@ -63,34 +63,35 @@ No requirements.
 
 | Name | Version |
 |------|---------|
-| aws | n/a |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
 
 ## Modules
 
-No Modules.
+No modules.
 
 ## Resources
 
-| Name |
-|------|
-| [aws_budgets_budget](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/budgets_budget) |
+| Name | Type |
+|------|------|
+| [aws_budgets_budget.full](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/budgets_budget) | resource |
+| [aws_budgets_budget.half](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/budgets_budget) | resource |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| budget | Basic Budget Properties | `map(any)` | <pre>{<br>  "budget_type": "COST",<br>  "limit_unit": "USD",<br>  "name": "budget-ec2-monthly",<br>  "time_unit": "MONTHLY"<br>}</pre> | no |
-| cost\_filters | The Budget filters to use | `map(any)` | `null` | no |
-| limit | Budget alarm limit | `number` | n/a | yes |
-| notification | Budget notification properties | `any` | n/a | yes |
-| time\_period\_start | Time to start | `string` | n/a | yes |
+| <a name="input_budget"></a> [budget](#input\_budget) | Basic Budget Properties | `map(any)` | <pre>{<br>  "budget_type": "COST",<br>  "limit_unit": "USD",<br>  "name": "budget-ec2-monthly",<br>  "time_unit": "MONTHLY"<br>}</pre> | no |
+| <a name="input_cost_filters"></a> [cost\_filters](#input\_cost\_filters) | The Budget filters to use | `map(any)` | `null` | no |
+| <a name="input_limit"></a> [limit](#input\_limit) | Budget alarm limit | `number` | n/a | yes |
+| <a name="input_notification"></a> [notification](#input\_notification) | Budget notification properties | `any` | n/a | yes |
+| <a name="input_time_period_start"></a> [time\_period\_start](#input\_time\_period\_start) | Time to start | `string` | n/a | yes |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| ec2\_budget | n/a |
-| ec2\_half\_budget | n/a |
+| <a name="output_budget"></a> [budget](#output\_budget) | n/a |
+| <a name="output_half_budget"></a> [half\_budget](#output\_half\_budget) | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Related Projects

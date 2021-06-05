@@ -1,7 +1,7 @@
-output "ec2_budget" {
-  value = aws_budgets_budget.ec2
+output "budget" {
+  value = aws_budgets_budget.full
 }
 
-output "ec2_half_budget" {
-  value = aws_budgets_budget.ec2-half
+output "half_budget" {
+  value = aws_budgets_budget.half
 }

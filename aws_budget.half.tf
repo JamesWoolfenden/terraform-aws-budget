@@ -1,5 +1,5 @@
-resource "aws_budgets_budget" "ec2-half" {
-  name              = "half-budget-ec2-monthly"
+resource "aws_budgets_budget" "half" {
+  name              = "half-${var.budget["name"]}"
   budget_type       = var.budget["budget_type"]
   limit_amount      = var.limit / 2
   limit_unit        = var.budget["limit_unit"]

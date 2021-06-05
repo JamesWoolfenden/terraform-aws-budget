@@ -1,7 +1,7 @@
-output "ec2_budget" {
-  value = module.budget.ec2_budget
+output "budget" {
+  value = module.budget.budget
 }
 
-output "ec2_half_budget" {
-  value = module.budget.ec2_half_budget
+output "half_budget" {
+  value = module.budget.half_budget
 }
