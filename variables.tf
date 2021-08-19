@@ -28,3 +28,9 @@ variable "cost_filters" {
   type        = map(any)
   default     = null
 }
+
+variable "half_budget_enabled" {
+  description = "Wether to enable or disable the half budget alert"
+  type        = bool
+  default     = true
+}
