@@ -21,7 +21,7 @@ variable "budget" {
 
 variable "notification" {
   description = "Budget notification properties"
-  type        = object({
+  type = object({
     comparison_operator        = string
     threshold                  = number
     threshold_type             = string
@@ -37,7 +37,7 @@ variable "cost_filters" {
 }
 
 variable "half_budget_enabled" {
-  description = "Wether to enable or disable the half budget alert"
+  description = "Whether to enable or disable the half budget alert"
   type        = bool
   default     = true
 }
