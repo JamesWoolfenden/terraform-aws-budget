@@ -1,4 +1,5 @@
 resource "aws_budgets_budget" "half" {
+  count             = var.half_budget_enabled ? 1 : 0
   name              = "half-${var.budget["name"]}"
   budget_type       = var.budget["budget_type"]
   limit_amount      = var.limit / 2

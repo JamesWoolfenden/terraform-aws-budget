@@ -21,10 +21,23 @@ variable "budget" {
 
 variable "notification" {
   description = "Budget notification properties"
+  type = object({
+    comparison_operator        = string
+    threshold                  = number
+    threshold_type             = string
+    notification_type          = string
+    subscriber_email_addresses = set(string)
+  })
 }
 
 variable "cost_filters" {
   description = "The Budget filters to use"
   type        = map(any)
   default     = null
+}
+
+variable "half_budget_enabled" {
+  description = "Whether to enable or disable the half budget alert"
+  type        = bool
+  default     = true
 }
