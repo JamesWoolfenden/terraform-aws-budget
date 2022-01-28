@@ -55,15 +55,16 @@ The variable limit creates 2 sets of alerts one at its setting and another at ha
 Additional users or groups can added to _subscriber_email_addresses_.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+
 ## Requirements
 
 No requirements.
 
 ## Providers
 
-| Name | Version |
-|------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
+| Name                                             | Version |
+| ------------------------------------------------ | ------- |
+| <a name="provider_aws"></a> [aws](#provider_aws) | n/a     |
 
 ## Modules
 
@@ -71,28 +72,29 @@ No modules.
 
 ## Resources
 
-| Name | Type |
-|------|------|
+| Name                                                                                                                  | Type     |
+| --------------------------------------------------------------------------------------------------------------------- | -------- |
 | [aws_budgets_budget.full](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/budgets_budget) | resource |
 | [aws_budgets_budget.half](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/budgets_budget) | resource |
 
 ## Inputs
 
-| Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
-| <a name="input_budget"></a> [budget](#input\_budget) | Basic Budget Properties | `map(any)` | <pre>{<br>  "budget_type": "COST",<br>  "limit_unit": "USD",<br>  "name": "budget-ec2-monthly",<br>  "time_unit": "MONTHLY"<br>}</pre> | no |
-| <a name="input_cost_filters"></a> [cost\_filters](#input\_cost\_filters) | The Budget filters to use | `map(any)` | `null` | no |
-| <a name="input_half_budget_enabled"></a> [half\_budget\_enabled](#input\_half\_budget\_enabled) | Whether to enable or disable the half budget alert | `bool` | `true` | no |
-| <a name="input_limit"></a> [limit](#input\_limit) | Budget alarm limit | `number` | n/a | yes |
-| <a name="input_notification"></a> [notification](#input\_notification) | Budget notification properties | <pre>object({<br>    comparison_operator        = string<br>    threshold                  = number<br>    threshold_type             = string<br>    notification_type          = string<br>    subscriber_email_addresses = set(string)<br>  })</pre> | n/a | yes |
-| <a name="input_time_period_start"></a> [time\_period\_start](#input\_time\_period\_start) | Time to start | `string` | n/a | yes |
+| Name                                                                                       | Description                                        | Type                                                                                                                                                                                       | Default                                                                                                                            | Required |
+| ------------------------------------------------------------------------------------------ | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------- | :------: |
+| <a name="input_budget"></a> [budget](#input_budget)                                        | Basic Budget Properties                            | `map(any)`                                                                                                                                                                                 | <pre>{<br> "budget_type": "COST",<br> "limit_unit": "USD",<br> "name": "budget-ec2-monthly",<br> "time_unit": "MONTHLY"<br>}</pre> |    no    |
+| <a name="input_cost_filters"></a> [cost_filters](#input_cost_filters)                      | The Budget filters to use                          | `map(any)`                                                                                                                                                                                 | `null`                                                                                                                             |    no    |
+| <a name="input_half_budget_enabled"></a> [half_budget_enabled](#input_half_budget_enabled) | Whether to enable or disable the half budget alert | `bool`                                                                                                                                                                                     | `true`                                                                                                                             |    no    |
+| <a name="input_limit"></a> [limit](#input_limit)                                           | Budget alarm limit                                 | `number`                                                                                                                                                                                   | n/a                                                                                                                                |   yes    |
+| <a name="input_notification"></a> [notification](#input_notification)                      | Budget notification properties                     | <pre>object({<br> comparison_operator = string<br> threshold = number<br> threshold_type = string<br> notification_type = string<br> subscriber_email_addresses = set(string)<br> })</pre> | n/a                                                                                                                                |   yes    |
+| <a name="input_time_period_start"></a> [time_period_start](#input_time_period_start)       | Time to start                                      | `string`                                                                                                                                                                                   | n/a                                                                                                                                |   yes    |
 
 ## Outputs
 
-| Name | Description |
-|------|-------------|
-| <a name="output_budget"></a> [budget](#output\_budget) | n/a |
-| <a name="output_half_budget"></a> [half\_budget](#output\_half\_budget) | n/a |
+| Name                                                                 | Description |
+| -------------------------------------------------------------------- | ----------- |
+| <a name="output_budget"></a> [budget](#output_budget)                | n/a         |
+| <a name="output_half_budget"></a> [half_budget](#output_half_budget) | n/a         |
+
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Related Projects
@@ -115,7 +117,7 @@ Please use the [issue tracker](https://github.com/JamesWoolfenden/terraform-aws-
 
 ## Copyrights
 
-Copyright © 2019-2021 James Woolfenden
+Copyright © 2019-2022 James Woolfenden
 
 ## License
 
