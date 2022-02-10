@@ -48,6 +48,7 @@ notification={
     threshold_type             = "PERCENTAGE"
     notification_type          = "FORECASTED"
     subscriber_email_addresses = ["test@example.com"]
+    subscriber_sns_topic_arns  = [""]
   }
 ```
 
@@ -85,7 +86,7 @@ No modules.
 | <a name="input_cost_filters"></a> [cost_filters](#input_cost_filters)                      | The Budget filters to use                          | `map(any)`                                                                                                                                                                                 | `null`                                                                                                                             |    no    |
 | <a name="input_half_budget_enabled"></a> [half_budget_enabled](#input_half_budget_enabled) | Whether to enable or disable the half budget alert | `bool`                                                                                                                                                                                     | `true`                                                                                                                             |    no    |
 | <a name="input_limit"></a> [limit](#input_limit)                                           | Budget alarm limit                                 | `number`                                                                                                                                                                                   | n/a                                                                                                                                |   yes    |
-| <a name="input_notification"></a> [notification](#input_notification)                      | Budget notification properties                     | <pre>object({<br> comparison_operator = string<br> threshold = number<br> threshold_type = string<br> notification_type = string<br> subscriber_email_addresses = set(string)<br> })</pre> | n/a                                                                                                                                |   yes    |
+| <a name="input_notification"></a> [notification](#input_notification)                      | Budget notification properties                     | <pre>object({<br> comparison_operator = string<br> threshold = number<br> threshold_type = string<br> notification_type = string<br> subscriber_email_addresses = set(any)<br> subscriber_sns_topic_arns = set(any) })</pre> | n/a                                                                                                                                |   yes    |
 | <a name="input_time_period_start"></a> [time_period_start](#input_time_period_start)       | Time to start                                      | `string`                                                                                                                                                                                   | n/a                                                                                                                                |   yes    |
 
 ## Outputs

@@ -13,6 +13,7 @@ notification = {
   threshold_type             = "PERCENTAGE"
   notification_type          = "FORECASTED"
   subscriber_email_addresses = ["james.woolfended@gmail.com"]
+  subscriber_sns_topic_arns  = []
 }
 
 cost_filters = {}
