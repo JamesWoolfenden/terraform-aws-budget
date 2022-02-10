@@ -74,8 +74,7 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [aws_budgets_budget.full](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/budgets_budget) | resource |
-| [aws_budgets_budget.half](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/budgets_budget) | resource |
+| [aws_budgets_budget.budget](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/budgets_budget) | resource |
 
 ## Inputs
 
