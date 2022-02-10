@@ -14,5 +14,6 @@ resource "aws_budgets_budget" "full" {
     threshold_type             = var.notification["threshold_type"]
     notification_type          = var.notification["notification_type"]
     subscriber_email_addresses = var.notification["subscriber_email_addresses"]
+    subscriber_sns_topic_arns  = var.notification["subscriber_sns_topic_arns"]
   }
 }

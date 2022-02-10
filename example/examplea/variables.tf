@@ -25,7 +25,8 @@ variable "notification" {
     threshold                  = number
     threshold_type             = string
     notification_type          = string
-    subscriber_email_addresses = set(string)
+    subscriber_email_addresses = set(any)
+    subscriber_sns_topic_arns  = set(any)
   })
 }
 variable "cost_filters" {
