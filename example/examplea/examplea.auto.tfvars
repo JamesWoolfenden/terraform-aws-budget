@@ -16,4 +16,4 @@ notification = {
   subscriber_sns_topic_arns  = []
 }
 
-cost_filters = {}
+//cost_filters = {}

@@ -81,7 +81,7 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_budget"></a> [budget](#input\_budget) | Basic Budget Properties | `map(any)` | <pre>{<br>  "budget_type": "COST",<br>  "limit_unit": "USD",<br>  "name": "budget-ec2-monthly",<br>  "time_unit": "MONTHLY"<br>}</pre> | no |
-| <a name="input_cost_filters"></a> [cost\_filters](#input\_cost\_filters) | The Budget filters to use | `map(any)` | `null` | no |
+| <a name="input_cost_filters"></a> [cost\_filters](#input\_cost\_filters) | The Budget filters to use | <pre>object({<br>    name   = string<br>    values = set(string)<br>  })</pre> | `null` | no |
 | <a name="input_half_budget_enabled"></a> [half\_budget\_enabled](#input\_half\_budget\_enabled) | Whether to enable or disable the half budget alert | `bool` | `true` | no |
 | <a name="input_limit"></a> [limit](#input\_limit) | Budget alarm limit | `number` | n/a | yes |
 | <a name="input_notification"></a> [notification](#input\_notification) | Budget notification properties | <pre>object({<br>    comparison_operator        = string<br>    threshold                  = number<br>    threshold_type             = string<br>    notification_type          = string<br>    subscriber_email_addresses = set(any)<br>    subscriber_sns_topic_arns  = set(any)<br>  })</pre> | n/a | yes |

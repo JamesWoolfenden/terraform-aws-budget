@@ -7,7 +7,10 @@ resource "aws_budgets_budget" "budget" {
   time_unit         = var.budget["time_unit"]
   time_period_start = var.time_period_start
 
-  cost_filters = var.cost_filters
+  cost_filter {
+    name   = var.cost_filters["name"]
+    values = var.cost_filters["values"]
+  }
 
   notification {
     comparison_operator        = var.notification["comparison_operator"]
