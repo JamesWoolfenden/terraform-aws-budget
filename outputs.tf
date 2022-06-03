@@ -1,7 +1,7 @@
 output "budget" {
-  value = aws_budgets_budget.budget[0]
+  value = try(aws_budgets_budget.budget[0], null)
 }
 
 output "half_budget" {
-  value = aws_budgets_budget.budget[1]
+  value = try(aws_budgets_budget.budget[1], null)
 }
