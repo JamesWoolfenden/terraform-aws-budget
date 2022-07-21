@@ -33,11 +33,11 @@ variable "notification" {
 
 variable "cost_filters" {
   description = "The Budget filters to use"
-  type = object({
+  type = list(object({
     name   = string
     values = set(string)
-  })
-  default = null
+  }))
+  default = []
 }
 
 variable "half_budget_enabled" {

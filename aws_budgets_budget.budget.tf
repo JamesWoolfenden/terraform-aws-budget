@@ -7,9 +7,12 @@ resource "aws_budgets_budget" "budget" {
   time_unit         = var.budget["time_unit"]
   time_period_start = var.time_period_start
 
-  cost_filter {
-    name   = var.cost_filters["name"]
-    values = var.cost_filters["values"]
+  dynamic "cost_filter" {
+    for_each = toset(var.cost_filters)
+    content {
+      name   = cost_filter.value.name
+      values = cost_filter.value.values
+    }
   }
 
   notification {
