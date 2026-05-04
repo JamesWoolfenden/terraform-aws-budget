@@ -2,12 +2,10 @@ variable "limit" {
   description = "Budget alarm limit"
   type        = number
 }
-
 variable "time_period_start" {
   description = "Time to start"
   type        = string
 }
-
 variable "budget" {
   description = "Basic Budget Properties"
   type        = map(any)
@@ -18,7 +16,6 @@ variable "budget" {
     limit_unit  = "USD"
   }
 }
-
 variable "notification" {
   description = "Budget notification properties"
   type = object({
@@ -30,7 +27,6 @@ variable "notification" {
     subscriber_sns_topic_arns  = set(any)
   })
 }
-
 variable "cost_filters" {
   description = "The Budget filters to use"
   type = list(object({
@@ -39,7 +35,6 @@ variable "cost_filters" {
   }))
   default = []
 }
-
 variable "half_budget_enabled" {
   description = "Whether to enable or disable the half budget alert"
   type        = bool
