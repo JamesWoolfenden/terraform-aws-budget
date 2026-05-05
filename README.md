@@ -116,7 +116,9 @@ resource "aws_iam_policy" "terraform_pike" {
                 "budgets:ModifyBudget",
                 "budgets:ViewBudget"
             ],
-            "Resource": "*"
+            "Resource": [
+                "*"
+            ]
         }
     ]
 })
