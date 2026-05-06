@@ -4,10 +4,8 @@
 [![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-aws-budget.svg)](https://github.com/JamesWoolfenden/terraform-aws-budget/releases/latest)
 [![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/JamesWoolfenden/terraform-aws-budget.svg?label=latest)](https://github.com/JamesWoolfenden/terraform-aws-budget/releases/latest)
 ![Terraform Version](https://img.shields.io/badge/tf-%3E%3D0.14.0-blue.svg)
-[![Infrastructure Tests](https://www.bridgecrew.cloud/badges/github/JamesWoolfenden/terraform-aws-budget/cis_aws)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=JamesWoolfenden%2Fterraform-aws-budget&benchmark=CIS+AWS+V1.2)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 [![checkov](https://img.shields.io/badge/checkov-verified-brightgreen)](https://www.checkov.io/)
-[![Infrastructure Tests](https://www.bridgecrew.cloud/badges/github/jameswoolfenden/terraform-aws-budget/general)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=JamesWoolfenden%2Fterraform-aws-budget&benchmark=INFRASTRUCTURE+SECURITY)
 
 Terraform module - creates a Budget and a Budget for half as much.
 
@@ -63,7 +61,7 @@ No requirements.
 ## Providers
 
 | Name | Version |
-|------|---------|
+| ---- | ------- |
 | <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
 
 ## Modules
@@ -73,24 +71,24 @@ No modules.
 ## Resources
 
 | Name | Type |
-|------|------|
+| ---- | ---- |
 | [aws_budgets_budget.budget](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/budgets_budget) | resource |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
-| <a name="input_budget"></a> [budget](#input\_budget) | Basic Budget Properties | `map(any)` | <pre>{<br>  "budget_type": "COST",<br>  "limit_unit": "USD",<br>  "name": "budget-ec2-monthly",<br>  "time_unit": "MONTHLY"<br>}</pre> | no |
-| <a name="input_cost_filters"></a> [cost\_filters](#input\_cost\_filters) | The Budget filters to use | <pre>list(object({<br>    name   = string<br>    values = set(string)<br>  }))</pre> | `[]` | no |
+| ---- | ----------- | ---- | ------- | :------: |
+| <a name="input_budget"></a> [budget](#input\_budget) | Basic Budget Properties | `map(any)` | <pre>{<br/>  "budget_type": "COST",<br/>  "limit_unit": "USD",<br/>  "name": "budget-ec2-monthly",<br/>  "time_unit": "MONTHLY"<br/>}</pre> | no |
+| <a name="input_cost_filters"></a> [cost\_filters](#input\_cost\_filters) | The Budget filters to use | <pre>list(object({<br/>    name   = string<br/>    values = set(string)<br/>  }))</pre> | `[]` | no |
 | <a name="input_half_budget_enabled"></a> [half\_budget\_enabled](#input\_half\_budget\_enabled) | Whether to enable or disable the half budget alert | `bool` | `true` | no |
 | <a name="input_limit"></a> [limit](#input\_limit) | Budget alarm limit | `number` | n/a | yes |
-| <a name="input_notification"></a> [notification](#input\_notification) | Budget notification properties | <pre>object({<br>    comparison_operator        = string<br>    threshold                  = number<br>    threshold_type             = string<br>    notification_type          = string<br>    subscriber_email_addresses = set(any)<br>    subscriber_sns_topic_arns  = set(any)<br>  })</pre> | n/a | yes |
+| <a name="input_notification"></a> [notification](#input\_notification) | Budget notification properties | <pre>object({<br/>    comparison_operator        = string<br/>    threshold                  = number<br/>    threshold_type             = string<br/>    notification_type          = string<br/>    subscriber_email_addresses = set(any)<br/>    subscriber_sns_topic_arns  = set(any)<br/>  })</pre> | n/a | yes |
 | <a name="input_time_period_start"></a> [time\_period\_start](#input\_time\_period\_start) | Time to start | `string` | n/a | yes |
 
 ## Outputs
 
 | Name | Description |
-|------|-------------|
+| ---- | ----------- |
 | <a name="output_budget"></a> [budget](#output\_budget) | n/a |
 | <a name="output_half_budget"></a> [half\_budget](#output\_half\_budget) | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
@@ -148,7 +146,7 @@ Please use the [issue tracker](https://github.com/JamesWoolfenden/terraform-aws-
 
 ## Copyrights
 
-Copyright © 2019-2022 James Woolfenden
+Copyright © 2019-2026 James Woolfenden
 
 ## License
 
